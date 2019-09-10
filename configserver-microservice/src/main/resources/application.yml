@@ -1,0 +1,74 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: false
+    registryFetchIntervalSeconds: 5
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver-microservice
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:mohit-singh4180/spring-cloud-config-repo.git
+          ignore-local-ssh-setting: true
+          strict-host-key-checking: false
+          search-paths:
+          - configuration/{application}/
+          - configuratiion/
+          private-key: |
+                        ------Begin SSH key----
+                        MIIJKAIBAAKCAgEAyjkOvPFNETmH8qEQIiE7Ym32jy6tk3lUrSQjweHXaNr16FKJ
+                        uB5Ncsy0ODyW9UmXJ2wIXcBa+NKeoFq+7tvTOkMz5m/oz7MZzHXk1zUKltuWFyiH
+                        45fsigWoe9pLAbHhqBlBmj1q0Ies+GgPDD4/aWy8aoaNSyj96U8bgaKKkFax3g3/
+                        SOsecW743YEJJEgGL9kMa/19ICmafOwG4yPD3D8rOFVF76YpCCcOjpJs/2FDg5Rd
+                        FtROtQxv6Wf6lRsVVKLrQ4E/SKc6zUfnI5KNFoA8v52kQxZK7BkWGyUQFSjj1GEM
+                        WvjqR6aSsGCAAtZ6scMCmMISKSRrMEpwZbEr5CfUSTuI2RgaBmf4/Pwax3/Zwkzq
+                        YAwstdRp0n0k3euqkw280Uf0kMAMJJzdhBZOmfdB67rndtU4eFV3ADb6l8oMv3i4
+                        FIdI5zLx3xPWeS6qYc1CsKX4ARZe38RucfdKdYPcYVviuvzFF8/o+cybir+ePq1D
+                        bM2Ht8FptIVlGkrQ2uDO/bYAn/MF+DKdVFBlPp+E/SowBeeFtpo5SMzM3e12BzRN
+                        tS82qvhZAjy9McHTH2xzuct6wwDc+JE/mbeeup2TWKWprlJyLXrSIJjIsPAI5Z4q
+                        WmyuPsgP5PD29/V+7004RutkW8w3b6FWvcxS35qrtgTRYDx3BTh4SjPxFTUCAwEA
+                        AQKCAgBqBOX0KvIDoMzkaIqjyhZvMUV9pbQ8x/Sb3YGdqUCc6YbY6UTosYJbOHUX
+                        srRWHuHPOjVcqXdIUmv1l/3YDom8VvVDz9IX6kcRSZHTPiyyEKestoQfz0ukxPij
+                        DjwaxF6RGcSqD58LesY1aaDSA2SNagOSOb6j8/bCtcWu/j91Eu6ng2Eeop3QTKTO
+                        xFK9ocEUns+DYl+SWB11duzZcqvBsaCAJTzIOq3yZz+bgasBbMXPmx3+1Qn6o22c
+                        yfW27H8PY2bCemVqOrp6W0MUBEZR0KOItiYjQfG/vBs52gGHhmuDsemfXDa/n9Xy
+                        AHW8hyPGRH39BmotBbnolG4+8lcWk+YYuvh6n1fyjGbzmEsop8XGvt0mrds2ws+g
+                        AoKVxEERJLcHO24eyGY4Zwsh+01+t0P0GeHR4r4QtyY+GwIsJtw1FYP5l+DlJa5a
+                        1qNODud8QRtoqohqwmPSSFzqjUiFB/qn0agHRDS6njMvNuvRb4cIVvEIwhqNt7DJ
+                        mgTnCA/3VwthNSi5ucX7xxWQ5NYTdAqRjh3AE2BIY60TsyMjeh4XvB9Tt79vGce1
+                        zka3UZEluDvlHJdELaY3SAf3OLNt9R+nylg6QRS4PG7MS7DmqhzI91IQqN0Xn56+
+                        bcgxvMabBl5TvZif1XlJwdxeu8BMD12574c+hLF9QADbH53RNQKCAQEA/JaIrylf
+                        5l4C1ez7BKWfepls7jztbecxagL/NRelHwru7m8HOH/0BjBZRn88yu0o+Ntlr+u7
+                        Rk3Y9tUaUrUB1fVP6x/M5R2a8T0Wd1tqWL2iNEgDqWB06TxwVToUn/OZroX/Ccf9
+                        pVsvdNpHHaPtLauYhqub0uF8+ib9xeVfcceoDSZf8C/spdmRh4lTwEjMwqPfl0jr
+                        3TvndUwcaqQT3ju3sTCw26EFeWsKjMK2JuHi0S2/qFzYiCFuLHDXXJEpP1qmqMNH
+                        pScbho0JPFbg+owkWURgSJ2xaFB+tXalafxLsD/MbIylfS6LhDAhEuwdDleJsMZe
+                        rT7l+439uFw1ywKCAQEAzPRbj3xc64eAfpTzyyKQtDTVR4V6WDhxrUTpL4T17hvE
+                        eZsGKX5ES/ey47hA4jHpuEqeK2yoZfH6/0ztiMZPnkVv4gxtuQY82ghoKVX8Ppa4
+                        kxaSr54lkO7PwZX+B6F31U9aIUnQYFjgZhnTiHJZUZmKBj8f/FiFC6eWVrkONPpk
+                        E3vZsewY/i7PnIgfRZqbI5gb1Sy/88yfoZTR1ybt8qKR5YtsVLGO3cdl69V0ps7R
+                        077Rbh7i31ssWUO9zF3QmxbmO4QRtr2woafj3YrG8YUqj+1UxbAfAiJBYnTfzcRm
+                        nTioiqgizkFWDpOD56fGykaeNgH5tttrmrghyVaA/wKCAQEArm8a57RwCPxFgw0M
+                        cTIbx6Pq6T/kS/DMXETDkBvLKXv4c2rzlp4unJOJI7k893r+v5VsTShDhZK/Uf7r
+                        FdDw+pxV269zZYqjdRPVzwmvkKctPGO7O55kPqpBfWoF0kx9hlv9O/kD/szRIiaX
+                        1C1f3xlQ1Tfv/ZtBHtQMjz0PQ9k5AhPNT2cZS5PL/8jjsLfVyFk5URXH5Vm4R3YP
+                        bcnv+ppNCi3xBUvXJvm4KGtTNdjrNcAdSp0L4D8OAdzPrZqF3L2yuHtbn/848Bu4
+                        FBZ/eieL9qXUxHE6kip8xr6wD1hvwMDeYNxkcOXS7a/7N0Ed88iaSx1DRutYEfgG
+                        DuqHLwKCAQAfkfhUltR9V0b8uJcBEFb32zeLJ81br34bMYU106ZKQi62iKGfXJrK
+                        lOISX7xm20dkIuJQUBF0epyuHLxuGBYFjC6axE1WddaDw03AKEWNoovV5GE9+f9R
+                        XufTqvYRWNbrnaiFfihB3w7Zy1qhJvQJNLxlD+4uYbhEvlDTFPhSQsuNkMNMu9Bx
+                        vuYt923Ru+nvxqtq39TFihyAuDrGiHGYsWAF2r8aIKugD+nsNNoeI7eAhWEfNFTA
+                        EPw4181xoHXUnedi/Yn4+yktDX51Dr5sT5Xpy6YGOYXdP0eREe2zdXBVAXg8u395
+                        A+lsn15vHZHqcIxIR2+eshfWIkzaBaAjAoIBAHP0hvtfegGK+IFNZfjplPoM3R/M
+                        hab6pb2uWWfB9/kvJQKwMwY+ggwnOvKwIO4GyZpcvOUIQs2G5ciRBZlgBCGUarQA
+                        ZRPTDooL95BLOv4WxHxfyof8RBe7HA7Wzzq3CtCu2KRMjdoHg1SL8mBlE0hIzyO/
+                        TpNnMqoIM76NEX4F87FcAM5E2AfaCKco/a2rRN1x9/Av8+0cT/FSfph4m0qD8UTl
+                        mdZ7Z3kzJr6ELrW1dgHKWlioYZd3NqFTMFnfDeKPJnfOxk+bhe9+w9/EbpbDQ8Yo
+                        MDPpYsEmwiF6syw6VH4/gMqljA+3XvLW3cc1kSXht521gzlviy6axExF77M=
+                        ----END SSH key----

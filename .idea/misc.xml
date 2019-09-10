@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/apigateway-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/employee-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/login-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/discoveryserver/pom.xml" />
+        <option value="$PROJECT_DIR$/payment-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/order-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/configserver-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/configclient-microservice/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

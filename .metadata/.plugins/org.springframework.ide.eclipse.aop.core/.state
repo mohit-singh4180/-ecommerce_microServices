@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="payment-microservice"/>
+<aop-project name="employee-microservice"/>
+<aop-project name="configserver-microservice"/>
+<aop-project name="login-microservice"/>
+<aop-project name="order-microservice"/>
+<aop-project name="apigateway-microservice"/>
+<aop-project name="discoveryserver"/>
+<aop-project name="configclient-microservice"/>
+</aop-reference-model>

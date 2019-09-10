@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: employee-microservice
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  profiles.active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+    consul:
+      discovery:
+        healthCheckPath: /ps/health
+        healthCheckInterval: 15s
+      ribbon:
+        enabled: true
+ribbon:
+  enabled: true
+
+server:
+   contextPath: /es
+   port: 9092
+
+management:
+  security:
+    enabled: false
+  health:
+    consul:
+      enabled: true
+    db:
+      enabled: true
+    diskspace:
+      enabled: true
+    defaults:
+       enabled: true
+
+services:
+   order-microservice:
+      url: http://order-microservice/vs
