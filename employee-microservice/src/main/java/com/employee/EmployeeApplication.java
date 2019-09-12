@@ -22,9 +22,13 @@ public class EmployeeApplication {
         SpringApplication.run(EmployeeApplication.class, args);
     }
 
-    @LoadBalanced
-    @Bean
-    RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
-}
+    @Configuration
+    class config{
+
+        @LoadBalanced
+        @Bean
+        public RestTemplate restTemplate() {
+            return new RestTemplate();
+        }
+
+    }}

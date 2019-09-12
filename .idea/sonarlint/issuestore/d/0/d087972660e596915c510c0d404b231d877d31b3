@@ -1,0 +1,10 @@
+
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(şÕÄûÿÿÿÿ8˜ÜÒØÑ-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ó Ô–8©³ÖØÑ-
+Š"squid:ClassVariableVisibilityCheck"UMake employees a static final constant or non-public and provide accessors if needed.(­µ™„8©³ÖØÑ-
+Usquid:S1135"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ8˜ÜÒØÑ-
+Msquid:S1444"/Make this "public static employees" field final(­µ™„8©³ÖØÑ-
+wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(­µ™„8êĞÑØÑ-
+;squid:S2386"Make this member "protected".(­µ™„8ıÒØÑ-

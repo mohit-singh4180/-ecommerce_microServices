@@ -1,0 +1,7 @@
+
+ƒsquid:UselessImportCheck	"SRemove this unused import 'org.springframework.cloud.openfeign.EnableFeignClients'.(Š˜Â®ıÿÿÿÿ8 ƒğØÑ-
+xsquid:UselessImportCheck"HRemove this unused import 'org.springframework.web.client.RestTemplate'.(Îö¼Şûÿÿÿÿ8š¬ñØÑ-
+‚squid:UselessImportCheck"WRemove this unused import 'org.springframework.cloud.client.loadbalancer.LoadBalanced'.(Éâ¦‡8š¬ñØÑ-
+ssquid:UselessImportCheck
+"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰Ş8š¬ñØÑ-
+„squid:UselessImportCheck"TRemove this unused import 'org.springframework.boot.web.client.RestTemplateBuilder'.(—«ñûÿÿÿÿ8š¬ñØÑ-

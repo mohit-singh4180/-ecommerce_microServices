@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/employee/properties")
 public class FetchPropertyController {
-    @Value("${config.server.employee-key}")
+   // @Value("${config.server.employee-key}")
     private String propertyKey;
 
     @GetMapping

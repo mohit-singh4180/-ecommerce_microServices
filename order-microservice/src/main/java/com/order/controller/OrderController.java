@@ -15,6 +15,7 @@ public class OrderController {
     public String home() {
         return "Hello World from order application";
     }
+
     @RequestMapping(value = "/order/{id}", method = RequestMethod.GET)
     public List<String> listVolunteers(@PathVariable("id") String id) {
         System.out.println("listVolunteers");

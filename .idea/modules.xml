@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/authorizationserver-microservice/authorizationserver.iml" filepath="$PROJECT_DIR$/authorizationserver-microservice/authorizationserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/apigateway-microservice/demo.iml" filepath="$PROJECT_DIR$/apigateway-microservice/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/configclient-microservice/demo (1) (com.configclient).iml" filepath="$PROJECT_DIR$/configclient-microservice/demo (1) (com.configclient).iml" />
       <module fileurl="file://$PROJECT_DIR$/configserver-microservice/demo (1) (com.configserver).iml" filepath="$PROJECT_DIR$/configserver-microservice/demo (1) (com.configserver).iml" />
@@ -9,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/login-microservice/demo (1) (com.login).iml" filepath="$PROJECT_DIR$/login-microservice/demo (1) (com.login).iml" />
       <module fileurl="file://$PROJECT_DIR$/order-microservice/demo (1) (com.order).iml" filepath="$PROJECT_DIR$/order-microservice/demo (1) (com.order).iml" />
       <module fileurl="file://$PROJECT_DIR$/payment-microservice/demo (1) (com.payment).iml" filepath="$PROJECT_DIR$/payment-microservice/demo (1) (com.payment).iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin-microservice/demo (1) (com.zipkin).iml" filepath="$PROJECT_DIR$/zipkin-microservice/demo (1) (com.zipkin).iml" />
       <module fileurl="file://$PROJECT_DIR$/discoveryserver/discoveryserver.iml" filepath="$PROJECT_DIR$/discoveryserver/discoveryserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ecommerce_Workspace.iml" filepath="$PROJECT_DIR$/.idea/ecommerce_Workspace.iml" />
     </modules>

@@ -16,7 +16,6 @@ import org.springframework.web.client.RestTemplate;
 @EnableAutoConfiguration
 @ComponentScan
 @EnableDiscoveryClient
-
 @SpringBootApplication
 public class OrderApplication {
 

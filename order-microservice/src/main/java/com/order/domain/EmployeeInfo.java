@@ -14,7 +14,20 @@ public class EmployeeInfo {
     private float salary;
     private String contactEmail;
     private boolean isFirstYear;
-    private Set< String > services = new HashSet< String >();
+
+    public EmployeeInfo() {
+    }
+
+    public EmployeeInfo(long employeeId, String firstName, String lastName, String gender, float salary, String contactEmail, boolean isFirstYear) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.salary = salary;
+        this.contactEmail = contactEmail;
+        this.isFirstYear = isFirstYear;
+    }
+
 
     public long getEmployeeId() {
         return employeeId;
@@ -72,22 +85,4 @@ public class EmployeeInfo {
         isFirstYear = firstYear;
     }
 
-    public EmployeeInfo() {
-    }
-
-    public EmployeeInfo(long employeeId, String firstName, String lastName, String gender, float salary, String contactEmail, boolean isFirstYear) {
-        this.employeeId = employeeId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
-        this.salary = salary;
-        this.contactEmail = contactEmail;
-        this.isFirstYear = isFirstYear;
-    }
-    public void setServices(Set<String> services) {
-        this.services = services;
-    }
-    public void addService(String servicename) {
-        this.services.add(servicename);
-    }
 }

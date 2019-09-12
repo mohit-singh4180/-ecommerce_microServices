@@ -1,0 +1,4 @@
+
+Εsquid:S1598"΅This file "ZipkinApplication.java" should be located in "com\login" directory, not in "C:\CRIS\ecommerce_Workspace\zipkin-microservice\src\main\java\com\zipkin".(®τάϊÿÿÿÿ8ν³±‘Ò-
+isquid:CallToDeprecatedMethod
+":Remove this use of "EnableZipkinServer"; it is deprecated.(Β‡8ν³±‘Ò-

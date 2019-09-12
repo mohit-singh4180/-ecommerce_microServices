@@ -30,7 +30,6 @@ management:
       enabled: true
 server:
   port: 9091
-  contextPath: /os
 
 error:
   whitelabel:

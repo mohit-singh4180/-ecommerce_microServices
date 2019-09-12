@@ -1,0 +1,9 @@
+ssh-keygen -t rsa -b 4096 -C "mohitt1989@gmail.com"
+
+eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+clip < ~/.ssh/id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDWPMOOvq5uV4jvsW0V0uyYxo9c7Lisnb8yFVbTeVz6XV3UKHMBpPDqRcgSl6U0FO2k67VIgL0Mqf1SkcfMV3UYcF+tGzj6U7QX8zeLW6fet0rIkO/IP9B3pjTKQZB3OEURDluqfUnmsmdxxfNkYBJdqz8seexO9hVgxWHXBzvVBVkG9z093Ix/xJUAyVzJ5j/BUTMDCLlC1QFdDykYVCisM6Iq7S51+CWPRBAEyDSkbknv7NARxXAMp2lYNrZs0GdpnbQBjJyKmspeQKFHQqmQWuGo5+6b2gtgz3TMh/65cztpdYBThNsQw8wenhPVrdynZqlv+ZMEXZ2NGEVRTnRGSOY3PaoQeVTWVD+nHyhBkcnGhtWw+EwE7+kWLXzPA+lR3HlblQi6aMKxyF5yykdpsaYe3Sj3ofkATrRQW+JCBFS65I1B8sKz0SS5Q75gSSNLSokf+BdKZ619i9NiQFWbFXjc3yZxTlgx44QnSWhKYaiduX+f0rQMLWzZkbRWkMucksA89WfbqC45nbUK4i/IbzQ5yCCMwS+hYpgY9GZxxktU+fpB6lEEA+lkHHWHAZ3IOEP01zbKqUNVPkWlBerdpjcunj/Jjsa9hb3+hPg1g7k7TC20vgu3oNlI2a2ChGTzOfmzluQu5IFB7amRj0cCxIf6lcR4SSNFrN7Br7XOcw== mohitt1989@gmail.com

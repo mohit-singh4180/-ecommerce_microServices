@@ -1,0 +1,10 @@
+
+tsquid:UselessImportCheck"DRemove this unused import 'com.netflix.niws.client.http.RestClient'.(é„á·üÿÿÿÿ8  ç‘Ò-
+ksquid:S4488,"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ÍÆóÎúÿÿÿÿ8  ç‘Ò-
+V
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ªí©Œ8  ç‘Ò-
+ksquid:S4488!"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ÿİ¿üÿÿÿÿ8  ç‘Ò-
+ƒsquid:S14882"`Immediately return this expression instead of assigning it to the temporary variable "volnames".(ÎËİçúÿÿÿÿ8  ç‘Ò-
+[
+squid:S106&"9Replace this use of System.out or System.err by a logger.(şûşÜşÿÿÿÿ8  ç‘Ò-
+ƒsquid:S1488'"`Immediately return this expression instead of assigning it to the temporary variable "volnames".(¥Æÿüÿÿÿÿ8  ç‘Ò-

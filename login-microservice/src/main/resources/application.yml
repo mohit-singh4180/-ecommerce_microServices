@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: login-microservice
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  profiles.active: dev
+  cloud:
+    config:
+      uri: http://localhost:8888
+server:
+  port: 9094
