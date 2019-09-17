@@ -1,4 +1,9 @@
 spring:
+  zipkin:
+    base-url: http://localhost:2001/ # this is the default already, change this if you have a different host or port
+  sleuth:
+    sampler:
+      probability: 1
   application:
     name: login-microservice
   mvc:

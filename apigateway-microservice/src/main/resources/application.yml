@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: apigateway-microservice
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://localhost:2001/
+
+zuul:
+  routes:
+    todos:
+      path: /api/employee/** # Forward /employee-microservice/** to the micro service employee-microservice with that same Path
+      serviceId: employee-microservice
+      stripPrefix: true # When forwarding the request strip the /api/employee prefix, this is already the default
+      # url: http://localhost:9092/api/employee
+    proxy:
+      path: /order/**
+      service-id: order-microservice
+      strip-prefix: true
+      # url: http://localhost:9091
+
+# Enable Load Balancing for targeted micro services
+ribbon:
+  eureka:
+    enabled: true
+
+logging:
+  level:
+    root: warn
+    org.springframework: info
+    com.melardev: trace
+    org.springframework.cloud.netflix.zuul: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+

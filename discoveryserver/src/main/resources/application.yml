@@ -1,6 +1,13 @@
 spring: 
   application: 
     name: discovery-server
+  sleuth:
+      sampler:
+        probability: 1
+  zipkin:
+    base-url: http://localhost:2001/ #By default it is already set to local:2001 , but let's be explicit
+
+
 eureka:
   client:
     serviceUrl:
@@ -9,3 +16,4 @@ eureka:
     fetch-registry: false
 server:
     port: 8761
+    enableSelfPreservation: false

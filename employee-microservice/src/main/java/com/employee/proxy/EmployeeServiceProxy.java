@@ -1,17 +1,22 @@
 package com.employee.proxy;
 
+import com.employee.domain.EmployeeInfo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(url="",name = "orderservice")
-public interface EmployeeServiceProxy {
-    @RequestMapping(value = "/employee/feignClient/{id}", method = RequestMethod.GET)
-    String[]   getVolunteers(@PathVariable("id") String id);
+import java.util.Collection;
 
-    @RequestMapping("/version")
-    String getVersion();
+@FeignClient(url="",name = "orderservice-microservice")
+public interface EmployeeServiceProxy {
+
+    @RequestMapping("/employee/find/{id}")
+    public EmployeeInfo findById(@PathVariable(value="id") Long id);
+
+    @RequestMapping("/employee/findall")
+    public Collection<EmployeeInfo> findAll();
+
 }
 
 
